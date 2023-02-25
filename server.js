@@ -27,6 +27,7 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/root'))
 app.use('/auth', require('./routes/authRoutes'))
+app.use('/picturePublic', require('./routes/picturePublicRoutes'))
 app.use('/picturePrivate', require('./routes/picturePrivateRoutes'))
 
 app.all('*', (req, res) => {
