@@ -12,15 +12,13 @@ Contact [me](mailto:jinwei6@gmail.com)  to get`.env` file, and put .env file in 
 
 Install dependencies: npm install
 
-Run App: npm run dev
+Run project: npm run dev OR npm start
 
-Open [http://localhost:3500](http://localhost:3500) to view it in the browser.
+Server will be running on port 3500
 
-Launch the frontend APP from [here](https://github.com/walterjin6/monashflickr-frontend)  
+Launch the paired frontend project from [here](https://github.com/walterjin6/monashflickr-frontend)  
 
-Test APP: npm test
-
-Build APP: npm run build
+Test project: npx jest
 
 ##  API documentation
 
@@ -29,9 +27,8 @@ Pls see [here](https://github.com/walterjin6/monashflickr-backend/blob/main/API-
 ## Features
 
 1.  OAuth 2.0: use refresh token, Access token, JWT authentication
-2.  View public pictures via public API without login needed
-3.  View private pictures via private API with login needed
-4.  loginLimiter: Limit the number of failed login for security purpose
+2.  Use middleware to protect private API by verifying JWT.
+3.  LoginLimiter: Limit the number of failed logins for security purpose
 
 ## Main Tech Stacks used
 
@@ -41,4 +38,5 @@ Pls see [here](https://github.com/walterjin6/monashflickr-backend/blob/main/API-
 4. MongoDB: to store username and password
 5. Mongoose: for ORM
 6. Postman: to test the API
-7. Jest: to run tests and provide test coverage
+7. Jest/supertest: to run tests and provide test coverage
+8. Axios: to make api requests
