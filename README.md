@@ -22,15 +22,16 @@ Test APP: npm test
 
 Build APP: npm run build
 
-## Postman
+##  API documentation
 
-Pls see here for API documentation
+Pls see [here](https://github.com/walterjin6/monashflickr-backend/blob/main/API-Documentation.md) for API documentation
 
 ## Features
 
 1.  OAuth 2.0: use refresh token, Access token, JWT authentication
 2.  View public pictures via public API without login needed
 3.  View private pictures via private API with login needed
+4.  loginLimiter: Limit the number of failed login for security purpose
 
 ## Main Tech Stacks used
 

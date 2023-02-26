@@ -41,8 +41,8 @@ const getPicturePublic = async (req, res) => {
 }
 
 const getPicturePrivate = async (req, res) => {
-  const {input} = req.body
-  const flickrHome = `http://api.flickr.com/services/rest/?format=json&sort=random&method=flickr.photos.search&tags=${input}&tag_mode=all&api_key=${process.env.FLICKR_API_KEY}&nojsoncallback=1`
+  const tag = req.params.tag; 
+  const flickrHome = `http://api.flickr.com/services/rest/?format=json&sort=random&method=flickr.photos.search&tags=${tag}&tag_mode=all&api_key=${process.env.FLICKR_API_KEY}&nojsoncallback=1`
   let data = await getData()
   let items = []
   async function getData() {
