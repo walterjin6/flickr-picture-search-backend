@@ -1,6 +1,6 @@
 # Flickr Picture Search
 
-[Click me to view Demo Website](https://monashflickr.onrender.com/)
+### [Click me to view Demo Website](https://monashflickr.onrender.com/)
 
 This project is the backend part for searching Flicker pictures through APIs provided by Flickr.
 
@@ -22,23 +22,22 @@ Test APP: npm test
 
 Build APP: npm run build
 
-## API documentation
+## Postman
 
 Pls see here for API documentation
 
 ## Features
 
-1.  Input validation on login and search
-2.  OAuth 2.0: use refreash token, Access token, JWT 
-3.  Persist login by select "trust this device" on login form
-4.  View public pictures via public API without login needed
-5.  View private pictures via private API with login needed
-6.  Use Redux Toolkit query to manage global state and cache
+1.  OAuth 2.0: use refresh token, Access token, JWT authentication
+2.  View public pictures via public API without login needed
+3.  View private pictures via private API with login needed
 
 ## Main Tech Stacks used
 
-1. React: to construct UI components
-2. React Router: to navigate between pages
-3. Redux Toolkit Query: for server request, global state and cache management
-4. TailwindCSS: to style the UI
-5. Jest: to run tests and provide test coverage>
+1. Node: backend architecture
+2. Express: to construct Restful API
+3. JWT: for authentication
+4. MongoDB: to store username and password
+5. Mongoose: for ORM
+6. Postman: to test the API
+7. Jest: to run tests and provide test coverage
