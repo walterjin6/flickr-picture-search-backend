@@ -8,7 +8,7 @@ This project is the backend part for searching Flicker pictures through APIs pro
 
 First clone this repository:  git clone https://github.com/walterjin6/monashflickr-backend.git
 
-Contact [me](mailto:jinwei6@gmail.com)  to get`.env` file, and put .env file in project root folder
+Contact [me](mailto:jinwei6@gmail.com)  to get`.env` file, and put .env file in project root directory
 
 Install dependencies: npm install
 
